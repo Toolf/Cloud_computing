@@ -10,13 +10,16 @@ sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Http.2/' /etc/hosts
 
 # setup netplan
 sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+sudo netplan apply
 
 # add hosts
 cat ../hosts | sudo tee -a /etc/hosts
 
 # isntall dependency
-sudo apt install apache2 php mysqlnd
+sudo apt install apache2 php php php-mysql
 
-sudo systemctl enable apache2
+sudo systemctl start apache2
 
 cp ./index.php /var/www/html/index.php
+
+sudo systemctl restart apache2

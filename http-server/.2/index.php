@@ -5,7 +5,7 @@
     $mysql_database = "testdb";
 
 
-    $mysqli = new $mysqli(
+    $mysqli = new mysqli(
         $mysql_host,
         $mysql_user,
         $mysql_pass,
@@ -17,9 +17,9 @@
         exit("Invalid database connection");
     }
 
-    if ($entries = $mysqli->query("SELECT * FROM users")) {
-        for ($entries as $entry) {
-            echo "{$entry['name']}, $entry['selary']";
+    if ($entries = $mysqli->query("SELECT * FROM User")) {
+        foreach ($entries as $entry) {
+            echo "{$entry['name']}, {$entry['selary']}";
         }
     }
 ?>

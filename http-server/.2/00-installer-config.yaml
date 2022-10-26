@@ -1,5 +1,5 @@
 network:
-  ethernet:
+  ethernets:
     enp0s3:
       dhcp4: true
     enp0s8:

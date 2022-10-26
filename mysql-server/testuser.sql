@@ -1,1 +1,2 @@
-CREATE USER 'testuser' IDENTIFIED WITH authentication_plugin BY 'testpass';
+CREATE USER 'testuser' IDENTIFIED BY 'testpass';
+GRANT ALL PRIVILEGES ON *.* TO 'testuser' WITH GRANT OPTION;
