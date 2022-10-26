@@ -6,6 +6,9 @@
 (nginx)                     (mysql-server)
       \----(http-server.2)----/
 ```
+
+For each server we use Ubuntu-server (ubuntu-22.04.1-live-server-amd64)
+
 ## IP table
 
 | server        | ip          |
@@ -14,3 +17,14 @@
 | http-server.1 | 192.168.1.2 |
 | http-server.2 | 192.168.1.3 |
 | mysql-server  | 192.168.1.4 |
+
+
+# Installation
+
+```
+git clone https://github.com/Toolf/Cloude_computing.git
+cd Cloude_computing
+cd <service-name>
+chmox +x setup.sh
+./setup.sh
+```

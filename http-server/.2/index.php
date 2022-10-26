@@ -18,8 +18,10 @@
     }
 
     if ($entries = $mysqli->query("SELECT * FROM User")) {
+        echo "<table><tr><th>Name</th><th>Selary</th></tr>";
         foreach ($entries as $entry) {
-            echo "{$entry['name']}, {$entry['selary']}";
+            echo "<tr><th>{$entry['name']}</th><th>{$entry['selary']}</th>";
         }
+        echo "</table>";
     }
 ?>
