@@ -21,5 +21,6 @@ sudo apt install apache2 php php-mysql
 sudo systemctl start apache2
 
 sudo cp ./index.php /var/www/html/index.php
+sudo cp ./index.php /var/www/html/get_info.php
 
 sudo systemctl restart apache2
