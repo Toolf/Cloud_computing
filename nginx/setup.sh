@@ -9,8 +9,8 @@ sudo sed -i 's/ubuntu/Karpenko-Yaroslav-Nginx/' /etc/hostname
 sudo sed -i 's/ubuntu/Karpenko-Yaroslav-Nginx/' /etc/hosts
 
 # setup netplan
-sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
-sudo netplan apply
+#sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+#sudo netplan apply
 
 # add hosts
 cat hosts | sudo tee -a /etc/hosts

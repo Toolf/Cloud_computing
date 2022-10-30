@@ -5,12 +5,12 @@
 # Smirnov-Nazar - student name
 # Mysql - server role
 # !need to reboot for update
-sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Mysql/' /etc/hostname
-sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Mysql/' /etc/hosts
+#sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Mysql/' /etc/hostname
+#sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Mysql/' /etc/hosts
 
 # setup netplan
-sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
-sudo netplan apply
+#sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
+#sudo netplan apply
 
 # add hosts
 cat hosts | sudo tee -a /etc/hosts
