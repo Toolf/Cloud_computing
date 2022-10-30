@@ -32,3 +32,5 @@ sudo mysql "$dbname" < "structure.sql"
 sudo mysql "$dbname" < "testdata.sql"
 ## set bind-address to 0.0.0.0 (all interfaces)
 sudo sed -i 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
+## restart mysql
+sudo systemctl restart mysql
