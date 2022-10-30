@@ -1,4 +1,4 @@
-192.168.1.1 nginx
-192.168.1.2 http-server.1
-192.168.1.3 http-server.2
-192.168.1.4 mysql-server
+192.168.120.16 nginx
+192.168.120.18 http-server.1
+192.168.120.19 http-server.2
+192.168.118.65 mysql-server
