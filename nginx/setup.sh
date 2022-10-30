@@ -22,3 +22,5 @@ sudo systemctl start nginx
 
 # copy nginx.conf
 sudo cp nginx.conf /etc/nginx/conf.d/nginx.conf
+
+sudo systemctl restart nginx
