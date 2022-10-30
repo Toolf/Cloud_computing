@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # update hostname
-# ubuntu-server - default hostname
-# Smirnov-Nazar - student name
+# ubuntu - default hostname
+# Karpenko-Yaroslav - student name
 # Nginx - server role
 # !need to reboot for update
-sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Nginx/' /etc/hostname
-sudo sed -i 's/ubuntu-server/Smirnov-Nazar-Nginx/' /etc/hosts
+sudo sed -i 's/ubuntu/Karpenko-Yaroslav-Nginx/' /etc/hostname
+sudo sed -i 's/ubuntu/Karpenko-Yaroslav-Nginx/' /etc/hosts
 
 # setup netplan
 sudo cp 00-installer-config.yaml /etc/netplan/00-installer-config.yaml
