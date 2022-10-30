@@ -25,6 +25,5 @@ For each server we use Ubuntu-server (ubuntu-22.04.1-live-server-amd64)
 git clone https://github.com/Toolf/Cloud_computing.git
 cd Cloud_computing
 cd <service-name>
-chmox +x setup.sh
 ./setup.sh
 ```
